@@ -1,64 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental</title>
+    <title>NURLITA | Exclusive Car Experience</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+      
+    </style>
 </head>
-
 <body>
-    <div id="search">
-        <div class="title">
-            <h1>Car Rental</h1>
-            <p>Find the perfect car for your next adventure</p>
-            <hr>
-        </div>
-        <div class="form-container">
-            <div class="form-group">
-                <label for="pickup">Rental Location:</label>
-                <select id="pickup" name="pickup">
-                    <option value="">Select Location</option>
-                    <option value="location1">Yogyakarta</option>
-                    <option value="location2">Bali</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="pickup-date">Rental Start Date:</label>
-                <input type="date" id="pickup-date" name="pickup-date">
-            </div>
-            <div class="form-group">
-                <label for="return-date">Rental End Date:</label>
-                <input type="date" id="return-date" name="return-date">
-            </div>
-            <button type="submit">Search</button>
-        </div>
-    </div>
 
-    <div class="car-list">
-        <h2>Car List</h2>
-        <div class="car-item">
-            <img src="url" alt="Car 1">
-            <h3>Car 1</h3>
-            <p>Car Detail</p>
+<header>
+    <div class="nav-container">
+        <a href="#home" class="logo">NUR<span>LITA</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#models">Mobil</a></li>
+            <li><a href="#terms">Persyaratan</a></li>
+            <li><a href="#booking">Reservasi</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+
+        <a href="#booking" class="btn-prime" style="padding: 12px 25px; font-size: 10px;">Booking Now</a>
+    </div>
+</header>
+
+<main>
+    <!-- HERO SECTION (DARK) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge">Curated Luxury Fleet | Yogyakarta</span>
+            <h1>Kemewahan Tanpa <br>Kompromi.</h1>
+            <p>Rasakan pengalaman berkendara kelas satu dengan koleksi mobil premium pilihan kami. Kebersihan dan ketepatan waktu adalah prioritas utama kami.</p>
+            <div class="cta-group">
+                <a href="#models" class="btn-prime">Eksplorasi NurlitaRent</a>
+            </div>
         </div>
-        <div class="car-item">
-            <img src="url" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
+    </section>
+
+    <!-- MODELS SECTION (WHITE BACKGROUND) -->
+    <section id="models" class="white-section">
+        <div class="section-header">
+            <span>The Prestige Collection</span>
+            <h2>NurlitaRent Unggulan</h2>
         </div>
-        <div class="car-item">
-            <img src="url" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
+
+        <div class="car-grid">
+            <!-- Unit 1 -->
+            <div class="car-card">
+                <div class="car-img">
+                    <img src="https://imgcdn.oto.com/large/gallery/exterior/38/2707/toyota-innova-zenix-hybrid-ev-front-angle-low-view-239610.jpg" alt="Innova Zenix">
+                </div>
+                <div class="car-info">
+                    <h3>Innova Zenix Hybrid</h3>
+                    <p>Modern, senyap, dan sangat nyaman untuk keluarga atau bisnis.</p>
+                    <div class="car-meta">
+                        <span class="price">IDR 850.000 <small>/ Hari</small></span>
+                        <span style="font-size: 10px; color: #999; letter-spacing: 1px;">HYBRID</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unit 2 -->
+            <div class="car-card">
+                <div class="car-img">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800" alt="Fortuner GR">
+                </div>
+                <div class="car-info">
+                    <h3>Fortuner GR Sport</h3>
+                    <p>SUV Tangguh dengan tampilan sporty dan interior mewah.</p>
+                    <div class="car-meta">
+                        <span class="price">IDR 1.500.000 <small>/ Hari</small></span>
+                        <span style="font-size: 10px; color: #999; letter-spacing: 1px;">DIESEL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unit 3 -->
+            <div class="car-card">
+                <div class="car-img">
+                    <img src="https://imgcdn.oto.com/large/gallery/exterior/38/2789/toyota-alphard-2023-front-side-view-519963.jpg" alt="Alphard">
+                </div>
+                <div class="car-info">
+                    <h3>Alphard Transformer</h3>
+                    <p>Standard tertinggi kenyamanan MPV di Indonesia.</p>
+                    <div class="car-meta">
+                        <span class="price">IDR 2.800.000 <small>/ Hari</small></span>
+                        <span style="font-size: 10px; color: #999; letter-spacing: 1px;">VIP CLASS</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="car-item">
-            <img src="url" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
+    </section>
+
+    <!-- TERMS SECTION (SOFT WHITE) -->
+    <section id="terms" style="background: #f4f4f4;">
+        <div class="section-header">
+            <span>Our Protocols</span>
+            <h2 style="color: #1a1a1a;">Persyaratan Sewa</h2>
+        </div>
+
+        <div class="car-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="term-box">
+                <h4>Lepas Kunci</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li>• Foto E-KTP & SIM A Aktif</li>
+                    <li>• Screenshot Akun Media Sosial</li>
+                    <li>• Deposit Jaminan (Refundable)</li>
+                    <li>• Bersedia Survey Domisili</li>
+                </ul>
+            </div>
+            <div class="term-box">
+                <h4>Dengan Driver</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li>• Driver Profesional & Berpakaian Rapi</li>
+                    <li>• Pemakaian Maksimal 12 Jam/Hari</li>
+                    <li>• Biaya Makan Driver IDR 50rb</li>
+                    <li>• Belum Termasuk BBM, Tol, & Parkir</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION SECTION (DARK BACKGROUND FOR CONTRAST) -->
+    <section id="booking" style="background: #0a0a0a; padding-bottom: 150px;">
+        <div class="booking-wrapper">
+            <div style="background: url('https://i.pinimg.com/1200x/60/13/85/60138510cf5760727085326fc628d4f5.jpg') center/cover;"></div>
+            <div class="booking-form-area">
+                <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 10px;">Private Booking</h2>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 30px;">Silakan lengkapi data untuk cek ketersediaan unit.</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan nama sesuai KTP" required>
+                    </div>
+                    <div class="form-group">
+                        <label>WhatsApp</label>
+                        <input type="tel" placeholder="0812-xxxx-xxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Pilih Unit</label>
+                        <select>
+                            <option>Innova Zenix Hybrid</option>
+                            <option>Fortuner GR Sport</option>
+                            <option>Alphard Transformer</option>
+                        </select>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label>Tanggal Sewa</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Sistem Sewa</label>
+                            <select>
+                                <option>Lepas Kunci</option>
+                                <option>Dengan Driver</option>
+                            </select>
+                        </div>
+                    </div>
+                 <button type="button" class="btn-prime" style="width: 100%; cursor: pointer; margin-top: 20px;"
+onclick="window.open('https://wa.me/6281312575928?text=Halo%20saya%20dari%20NurlitaRent%20mau%20rental%20mobil%20apa%3F','_blank')">
+    Kirim Reservasi ke WA
+</button>
+    </section>
+</main>
+
+<footer id="contact" style="padding: 80px 8% 40px; background: #ffffff; border-top: 1px solid #eee;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px;">
+        <div>
+            <a href="#home" class="logo" style="color: #000;">NUR<span>LITA</span></a>
+            <p style="margin-top: 20px; color: #666; font-size: 0.9rem; line-height: 1.8;">
+                Penyedia layanan sewa mobil mewah terpercaya di yogyakarta. Menjamin unit dalam kondisi prima dan pelayanan yang personal.
+            </p>
+        </div>
+        <div>
+            <h4 style="color: var(--gold-solid); margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+            <ul style="list-style: none; color: #444; font-size: 0.95rem; line-height: 2.2;">
+                <li><strong>WhatsApp:</strong> 0813-1257-5928</li>
+                <li><strong>Instagram:</strong> @nurlitarent</li>
+                <li><strong>Office:</strong> Yogyakarta, Indonesia</li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="color: var(--gold-solid); margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px;">Layanan</h4>
+            <ul style="list-style: none; color: #444; font-size: 0.95rem; line-height: 2.2;">
+                <li>Sewa Harian</li>
+                <li>Sewa Bulanan (Corporate)</li>
+                <li>Wedding Car</li>
+                <li>Airport Transfer VIP</li>
+            </ul>
         </div>
     </div>
+    <div style="margin-top: 80px; text-align: center; color: #999; font-size: 11px; letter-spacing: 3px; border-top: 1px solid #eee; padding-top: 30px;">
+        &copy; 2026 NURLITA PREMIUM RENTAL. ALL RIGHTS RESERVED.
+    </div>
+</footer>
+
 </body>
-
 </html>
