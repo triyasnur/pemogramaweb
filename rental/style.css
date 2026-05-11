@@ -1,6 +1,4 @@
-  /* =========================================
-           1. VARIABLES & RESET
-           ========================================= */
+
         :root {
             --gold: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
             --gold-solid: #d4af37;
@@ -30,9 +28,6 @@
             line-height: 1.6;
         }
 
-        /* =========================================
-           2. NAVIGATION
-           ========================================= */
         header {
             position: fixed;
             top: 0; width: 100%; z-index: 1000;
@@ -88,9 +83,7 @@
             color: var(--gold-solid);
         }
 
-        /* =========================================
-           3. HERO SECTION
-           ========================================= */
+     
         .hero {
             height: 100vh;
             position: relative;
@@ -145,9 +138,7 @@
             font-weight: 300;
         }
 
-        /* =========================================
-           4. WHITE SECTION (New Addition)
-           ========================================= */
+        
         .white-section {
             background-color: var(--pure-white);
             color: var(--text-main);
@@ -172,9 +163,6 @@
             color: #666;
         }
 
-        /* =========================================
-           5. COMPONENTS
-           ========================================= */
         .btn-prime {
             display: inline-block;
             padding: 18px 45px;
@@ -275,9 +263,7 @@
 
         .price { font-weight: 700; color: var(--gold-solid); font-size: 1.1rem; }
 
-        /* =========================================
-           6. TERMS & BOOKING
-           ========================================= */
+        
         .term-box {
             padding: 40px;
             background: var(--pure-white);
@@ -338,9 +324,7 @@
 
         .form-group input:focus { border-color: var(--gold-solid); background: #fff; }
 
-        /* =========================================
-           7. RESPONSIVE
-           ========================================= */
+      
         @media (max-width: 992px) {
             .nav-links { display: none; }
             .booking-wrapper { grid-template-columns: 1fr; }

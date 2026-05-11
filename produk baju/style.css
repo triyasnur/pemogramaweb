@@ -1,0 +1,122 @@
+body {
+    background-color: #F3F4F6;
+    font-family: 'Inter', sans-serif;
+    color: #1A1A1A;
+}
+
+/* CONTAINER UTAMA */
+.compact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+.nav-glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    max-width: 1200px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* APP SECTION & FOOTER BIAR GA KELEBARAN */
+#app,
+footer,
+#reviews,
+#koleksi,
+#cara-order {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+/* BUTTON */
+.btn-fancy {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.btn-fancy::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1A1A1A;
+    transition: width 0.3s ease;
+}
+
+.btn-fancy:hover::after {
+    width: 100%;
+}
+
+/* ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HIDE SCROLLBAR */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* MARQUEE */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee {
+    animation: marquee 20s linear infinite;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .compact-container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .nav-glass {
+        max-width: 100%;
+    }
+
+    #app .rounded-\[4rem\] {
+        border-radius: 2rem;
+    }
+
+    footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+}
